@@ -19,6 +19,23 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+
+            <div class="header-container">
+                @if (Route::has('login'))
+                    <div>
+                        @auth
+                            <a href="{{ url('/dashboard') }}" class="header-link">Dashboard</a>
+                        @else
+                            <a href="{{ route('login') }}" class="header-link">Log in</a>
+            
+                            @if (Route::has('register'))
+                                <a href="{{ route('register') }}" class="header-link ml-4">Register</a>
+                            @endif
+                        @endauth
+                    </div>
+                @endif
+            </div>
+            
         </div>
     </header>
 

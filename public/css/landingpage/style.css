@@ -22,6 +22,42 @@ body {
     padding: 20px 0;
 }
 
+/* header.css */
+
+.header-container {
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Aligns to the top */
+    right: 0; /* Aligns to the right */
+    padding: 24px; /* Padding of 1.5rem */
+    text-align: right; /* Aligns text to the right */
+    z-index: 10; /* Higher stacking context */
+}
+
+.header-link {
+    font-weight: 600; /* Semi-bold font */
+    color: #272A2D; /* Gray text */
+    text-decoration: none; /* Removes underline from links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.header-link:hover {
+    color: #1F2937; /* Dark gray on hover */
+}
+
+.header-link.dark {
+    color: #9CA3AF; /* Dark mode text color */
+}
+
+.header-link.dark:hover {
+    color: #FFFFFF; /* White on hover in dark mode */
+}
+
+.header-link:focus {
+    outline: 2px solid #5a79bb; /* Red outline on focus */
+    border-radius: 4px; /* Small rounded corners */
+}
+
+
 .container {
     display: flex; /* Use flexbox */
     justify-content: space-between; /* Space out items */
