@@ -12,7 +12,7 @@
         <h1 class="title">Create New Member</h1>
         <nav>
             <ul class="nav-links">
-                <li><a href="{{ route('landing') }}">Home</a></li>
+               
                 <li><a href="{{ route('members.index') }}">Members List</a></li>
             </ul>
         </nav>
