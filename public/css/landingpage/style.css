@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px; /* Maximum width for large screens */
+}
+.header {
+    background-color: #3b82f6; /* Blue background */
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items vertically */
+    width: 80%; /* Optional: width for the container */
+    margin: auto; /* Center the container */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left; /* Align text to the left */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main Content Styles */
+.main-content {
+    margin: 40px 0;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    margin-bottom: 20px;
+}
+
+.get-started {
+    background-color: #3b82f6; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.get-started:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+}
+
+/* Services Section */
+.services-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.service-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis */
+    text-align: center; /* Center text under the image */
+    margin: 0 10px; /* Space between boxes */
+}
+
+.service-image {
+    width: 100%; /* Make image fill the width of the box */
+    height: 250px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure images cover the container without distortion */
+    border-radius: 5px; /* Rounded corners for images */
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+.service-box:hover .service-image {
+    transform: scale(1.05); /* Scale effect */
+    filter: brightness(1.1); /* Brightness effect */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+}
+
+.service-box:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Footer Styles */
+.footer {
+    position: fixed;
+    background-color: #1f2937; /* Dark gray background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0px;
+    width: 100%;
+}
+.footer .containe{
+    align-items: center;
+}
